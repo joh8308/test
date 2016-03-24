@@ -12,7 +12,6 @@ var handler = function(req, res, next) {
     var controller;
 
     try {
-        // 2 depth only
         if(dir === '')
             controller = require(path.join(config.controllerDir, page));
         else
