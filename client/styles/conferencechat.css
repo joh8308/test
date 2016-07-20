@@ -1,0 +1,420 @@
+
+/******************************************************************************
+ *
+ * ConferenceChat
+ *
+ ******************************************************************************/
+
+/******************************************************************************
+ * ConferenceChat - Common
+ ******************************************************************************/
+
+/* Underline */
+.underline { border-bottom : 1px solid #E6E6E6; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat List
+ ******************************************************************************/
+#chat_list { width: 100%; height: 586px !important; margin-top: 30px; padding: 0; border: 1px solid #D2D2D2; border-radius: 4px; }
+#chat_list .header { padding: 20px; background-color: #F2F2F2; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+#chat_list .header .search_bar { width: 398px !important; height: 36px !important; padding-left: 11px; color: #000; font-size: 14px; border: 1px solid #D0D0D0; border-radius: 4px; }
+#chat_list .header .search_icon { float: right; width: 24px !important; height: 24px !important; margin: 5px 15px; background: url("../images/01_member_searchicon.png") center no-repeat; cursor: pointer; }
+#chat_list .header .filebox { float: right; width: 125px !important; height: 36px; margin-left: 5px; font-size: 14px; color: #FFFFFF; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2BA2DB; border-radius: 4px; }
+#chat_list .header .add_chat { float: right; width: 139px !important; height: 36px; font-size: 14px; color: #FFFFFF; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2BA2DB; border-radius: 4px; }
+#chat_list .content { height: 506px !important; background-color: #FFFFFF; border-top: 1px solid #D2D2D2; }
+#chat_list .content .chatlist_scroll { overflow-x: hidden; overflow-y: overlay; width: 100%; height: 485px !important;}
+#chat_list .content .chatlist_scroll .chatlist_title { height: 45px !important; padding: 20px 20px 0px; border-bottom: 1px solid #D2D2D2; }
+#chat_list .content .chatlist_scroll .chatlist_title h4 { font-size: 15px; color: #2BA2DB; font-weight: bold; }
+#chat_list .content .chatlist_scroll .chatlist_group a:hover { background-color: #F4FAFD; border-left: 4px solid #2BA2DB; }
+#chat_list .content .chatlist_scroll .chatlist_group .selected { background-color: #F4FAFD; border-left: 4px solid #2BA2DB !; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item { display: block; height: 81px !important; border-left: 4px solid #FFFFFF; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_img { float: left; width: 61px; height: 61px; margin: 10px 20px 10px 10px; border-radius: 30px; }
+
+#chat_list .chatroom_info_img { float: left; width: 61px; margin: 10px 20px 10px 10px; border-radius: 30px; overflow: hidden;}
+#chat_list .chatroom_info_img img { float: left; }
+#chat_list .chatroom_info_img.member_3 img { width: 30px; height: 60px; }
+#chat_list .chatroom_info_img.member_3 .chatmember_img1 { border-right: 1px solid #FFFFFF; border-top-left-radius: 30px; border-bottom-left-radius: 30px;}
+#chat_list .chatroom_info_img.member_3 .chatmember_img2 { border-top-right-radius: 30px; border-bottom-right-radius: 30px;}
+#chat_list .chatroom_info_img.member_4 img { width: 30px; height: 30px; }
+#chat_list .chatroom_info_img.member_4 .chatmember_img1 { border-right: 1px solid #FFFFFF; border-top-left-radius: 30px; }
+#chat_list .chatroom_info_img.member_4 .chatmember_img2 { border-top-right-radius: 30px; }
+#chat_list .chatroom_info_img.member_4 .chatmember_img3 { width: 60px; border-top: 1px solid #FFFFFF; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+#chat_list .chatroom_info_img.member_5_more img { width: 30px; height: 30px; }
+#chat_list .chatroom_info_img.member_5_more .chatmember_img1 { border-right: 1px solid #FFFFFF; border-top-left-radius: 30px; }
+#chat_list .chatroom_info_img.member_5_more .chatmember_img2 { border-bottom: 1px solid #FFFFFF; border-top-right-radius: 30px; }
+#chat_list .chatroom_info_img.member_5_more .chatmember_img3 { border-top: 1px solid #FFFFFF; border-bottom-left-radius: 30px; }
+#chat_list .chatroom_info_img.member_5_more .chatmember_img4 { border-left: 1px solid #FFFFFF; border-bottom-right-radius: 30px; }
+
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_front { float: left; margin: 10px; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_front h4.chatlist_name { float: left; margin: 10px 0px; font-size: 15px; color: #000; font-weight: bold; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_front .off_alarm { float: left; margin: 10px 0px 10px 10px; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_front h6.chatlist_content { margin: 3px 0px 10px; font-size: 12px; color: #9D9D9D; clear: left; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_back { float: right; width: 90px !important; margin: 20px 0px 5px; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_back .chatlist_date { width: 100%; margin-bottom: 7px; font-size : 10px; color: #999999; text-align: center; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_back .badge_box { text-align: center; }
+#chat_list .content .chatlist_scroll .chatlist_group .chatlist_item .chatlist_item_back .badge_box .badge { min-width: 20px; line-height: 10px; padding: 5px; font-size: 10px; background-color: #F76A51; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat List Left Click Menu
+ ******************************************************************************/
+#right_click_menu { position: absolute; overflow: hidden; width: 147px; height: 134px; background-color: #FFF; border-radius: 5px; border: 2px solid #2BA2DB; }
+#right_click_menu .menu_item { height: 35px; }
+#right_click_menu .menu_item:nth-child(2) { height: 59px; }
+#right_click_menu .menu_item.underline { border-color: #D2D2D2; }
+#right_click_menu .menu_item a { display: block; padding: 8px 0px; color: #2BA2DB; text-align: center; font-weight: bold; }
+#right_click_menu .menu_item:nth-child(2) a { color: #333; padding: 6px 0px; }
+#right_click_menu .menu_item:nth-child(2) a:nth-child(2) {padding-top: 0;}
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat List Add Chat Popup
+ ******************************************************************************/
+#add_chat_popup { overflow: hidden; width: 315px; height: 500px; border-radius: 5px; background-color: #FFF; }
+#add_chat_popup .header { position: relative; background-color: #2BA2DB; }
+#add_chat_popup .header .close_button{ position: absolute; top: 10px; right: 20px; }
+#add_chat_popup .header h2 { font-size: 17px; color: #FFF; text-align: center; font-weight: bold; line-height: 50px; }
+#add_chat_popup .slide_panel { position: relative; height: 75px !important; }
+#add_chat_popup .slide_panel div { height: 75px; padding: 0; }
+#add_chat_popup .slide_panel div.side { z-index: 120; width: 40px !important; background-color: #FFFFFF; }
+#add_chat_popup .slide_panel div.side.prev {position: absolute; top: 0; left: 0; padding-right: 10px; }
+#add_chat_popup .slide_panel div.side.prev a img { padding-top: 30px; float: right; background: none; -webkit-box-shadow: 0 0 4px rgba(0,0,0,0); -moz-box-shadow: 0 0 4px rgba(0,0,0,0); box-shadow: 0 0 4px rgba(0,0,0,0); }
+#add_chat_popup .slide_panel div.side.next {position: absolute; top: 0; right: 0; padding-left: 10px; }
+#add_chat_popup .slide_panel div.side.next a img { padding-top: 30px; background: none; -webkit-box-shadow: 0 0 4px rgba(0,0,0,0); -moz-box-shadow: 0 0 4px rgba(0,0,0,0); box-shadow: 0 0 4px rgba(0,0,0,0); }
+#add_chat_popup .slide_panel div.side a { display: block; width: 100%; height: 100%; }
+#add_chat_popup .slide_panel div.list { position:absolute; z-index: 110; top: 0; left: 30px; padding-top: 10px; overflow: hidden; }
+#add_chat_popup .slide_panel div.list ul { list-style: none; padding:0; display: inline-block; margin-left: 0;}
+#add_chat_popup .slide_panel div.list ul li { position: relative; float: left; width: 55px; height: 55px; }
+#add_chat_popup .slide_panel div.list ul li img.chatuser_img { width: 40px; height: 40px; border-radius: 20px; }
+#add_chat_popup .slide_panel div.list ul li p.chatuser_name { padding-top: 4px; text-align: center; font-size: 10px; white-space: nowrap; text-overflow: ellipsis; }
+#add_chat_popup .slide_panel div.list ul li span.invite_cancel { position: absolute; width: 14px; height: 14px; font-size: 10px; right: 5px; bottom: 14px; background-color: #E40000; color: #FFFFFF; border-radius: 7px;}
+#add_chat_popup .search_panel { height: 49px !important; padding: 10px 20px; background-color : #F2F2F2; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#add_chat_popup .search_panel .search_bar { float: left; width: 219px !important; height: 29px !important; padding-left: 12px; font-size: 13px; border: 1px solid #D0D0D0; border-radius: 4px; }
+#add_chat_popup .search_panel .search_button { float: right; width: 48px; height: 29px; font-size: 14px; color: #FFF; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2BA2DB; border-radius: 4px; }
+#add_chat_popup .subject_panel { height: 49px !important; padding: 10px 20px; background-color : #F2F2F2; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#add_chat_popup .subject_panel .subject_box input { width: 100%; }
+#add_chat_popup .content { height: 231px !important; padding: 10px 20px 0px; }
+#add_chat_popup .content .createchat_list { width: 100% !important; height: 221px !important; }
+#add_chat_popup .content .createchat_list .createchat_list_item { display: block; position: relative; width: 275px !important; height: 60px !important; margin-bottom: 0px; border-bottom: 1px solid #E6E6E6; }
+#add_chat_popup .content .createchat_list .createchat_list_item input[type="checkbox"] + label { margin-top: 22px; }
+#add_chat_popup .content .createchat_list .createchat_list_item .user_img { float: left; width: 36px; height: 36px; margin: 12px; border-radius: 18px; }
+#add_chat_popup .content .createchat_list .createchat_list_item .createchat_info_box { position: absolute; top: 50%; left: 87px; transform: translateY(-50%); }
+#add_chat_popup .content .createchat_list .createchat_list_item .createchat_info_box h4.user_name { float: left; margin: 0px; font-size: 13px; color: #333; font-weight: bold; }
+#add_chat_popup .content .createchat_list .createchat_list_item .createchat_info_box h6.user_email { margin: 0; padding-top: 7px; font-size: 10px; color: #999; clear: left; }
+#add_chat_popup .footer { padding: 20px; }
+#add_chat_popup .footer button { width: 100%; height: 40px; color: #FFF; font-size: 13px; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat List Add Chat Subject Popup
+ ******************************************************************************/
+#add_subject { overflow: hidden; width: 315px; height: 480px; background-color: #FFFFFF; border-radius: 5px; }
+#add_subject .header { position: relative; height: 50px; background-color: #2BA2DB; }
+#add_subject .header .close_button { position: absolute; top: 10px; right: 20px; }
+#add_subject .header h2 { font-size: 17px; color: #FFFFFF; padding-top: 15px; margin: 0; text-align: center; font-weight: bold; }
+#add_subject .content { }
+#add_subject .content .top { padding: 20px; }
+#add_subject .content .top input[type="text"] { width: 100%; padding: 7px 11px 7px 11px; border: 1px solid #D0D0D0; border-radius: 5px; font-size: 12px; }
+#add_subject .content .middle h2.chat_type_header { margin: 0; padding: 0 20px 10px 20px; color: #2BA2DB; font-size: 16px; font-weight: bold; border-bottom: 2px solid #2BA2DB; }
+#add_subject .content .middle .radio_menu .btn { display: block; width: 100%; padding: 20px; border-bottom: 1px solid #BBBBBB; color: #000; font-size: 16px; text-align: left; }
+#add_subject .content .middle .radio_menu .btn:active { box-shadow: inset 0 3px 5px rgba(0,0,0,0); }
+#add_subject .content .middle .radio_menu .btn.active { color: #333;  box-shadow: inset 0 3px 5px rgba(0,0,0,0); }
+#add_subject .content .middle .radio_menu .btn .radio_img { margin-right: 10px; padding: 9.5px; background: url("../images/00_radio_off.png") center no-repeat; background-size: 18px; }
+#add_subject .content .middle .radio_menu .btn input[type="radio"]:checked + .radio_img { background: url("../images/00_radio_on.png") center no-repeat; background-size: 18px; }
+#add_subject .content .middle .radio_menu .btn input[type="radio"] { display: none; }
+#add_subject .content .bottom { padding: 5px 20px 20px 20px; }
+#add_subject .content .bottom p.message { color: #666666; font-size: 11px; line-height: 16px; padding: 20px 0 10px 0; margin: 0;}
+#add_subject .footer { padding: 0 20px 20px 20px ;}
+#add_subject .footer .ok_btn {width: 100%; height: 40px; color: #FFF; font-size: 13px; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px;}
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room
+ ******************************************************************************/
+#chatroom { position: relative; overflow: hidden;}
+#chatroom .header { position: relative; width: 100%; height: 68px !important; padding: 13px 20px 20px; background-image: url(../images/00_gnb_background.png); }
+#chatroom .header .chatroom_title_box { width: 100%; height: 35px !important; }
+#chatroom .header .chatroom_title_box .sub_title { width: 100%; height: 13px !important; color: #F4F4F5; font-size: 13px; text-align: center;  }
+#chatroom .header .chatroom_title_box .sub_title .title_logo { margin-right: 6px; outline: none; }
+#chatroom .header .chatroom_title_box p { width: 100%; height: 14px !important; margin: 5px 0px 0px 0px; color: #FFF; font-size: 14px; text-align: center; }
+#chatroom .header .setting_btn { position: absolute; top: 18px; right: 14px; width: 29px !important; height: 30px !important; background-color: transparent; border: 0px; }
+#chatroom .sub_panel { width: 100%; height: 94px !important; padding: 19px 10.5px; border-bottom: 1px solid #DADBDC; }
+#chatroom .sub_panel .user_infobox { float: left; position: relative; width: 40px !important; height: 100%; margin: 0px 8.5px; }
+#chatroom .sub_panel .user_infobox .chatuser_img { width: 40px; height: 40px; margin-bottom: 2px; border-radius: 20px;  outline: 0px; }
+#chatroom .sub_panel .user_infobox .chatuser_delay { position: absolute; right: 0; bottom: 15px; }
+#chatroom .sub_panel .user_infobox .chatuser_name { margin: 0px; color: #3E404E; font-size: 11px; text-align: center; }
+#chatroom .sub_panel .user_infobox.no_user .chatuser_img { background: #DDD; opacity: 0.3; }
+#chatroom .sub_panel .user_infobox.no_user .chatuser_name{ color: #CFCFCF; }
+#chatroom .content { position: relative; width: 100%; padding-top: 10px; background-color: #F4F4F4; border-top: 1px solid #CDCECF; position: absolute; top: 160px; bottom: 35px; }
+#chatroom .content .chatuser_notice { position: absolute; top: 15px; left: 15px; z-index: 100; width: 336px !important; height: 57px !important; background-color : #3F9DD9; border: 1px solid #B4B4B4; border-radius: 1px; }
+#chatroom .content .chatuser_notice .notice_user_img { float: left; width: 38px; height: 38px; margin: 8px 12px 9px 9px; border-radius: 18px; }
+#chatroom .content .chatuser_notice p { position: absolute; top: 50%; left: 59px; transform: translateY(-50%); margin: 0; padding-right: 12px; font-size: 12px; color: #F5F9FD; }
+#chatroom .content .chatroom_chat { overflow-x: hidden; overflow-y: overlay; position: relative; width: 100%; margin: auto auto 5px auto; height:100%; }
+#chatroom .content .chatroom_chat .oneday_box { width:100%; float: left; padding: 6.5px 9px 20px 16px; border-top: 1px solid #DFDFDF; }
+#chatroom .content .chatroom_chat .oneday_box .chatroom_notice { float: right; width: 100%; min-height: 37px; margin: 5px 6px; padding: 12px; background-color: #DFDFDF; border-radius: 1px; }
+#chatroom .content .chatroom_chat .oneday_box .chatroom_notice p { margin: 0px; font-size: 12px; color: #454545; text-align: center; }
+#chatroom .content .chatroom_chat .oneday_box .day_notice { height: 37px !important; }
+#chatroom .content .chatroom_chat .receive_group { float: left; clear:both; position: relative; margin-top: 20px; padding: 19px 57px 0px 0px; } /*width: 308px !important;*/
+#chatroom .content .chatroom_chat .receive_group .chattinguser_name { position: absolute; top: 0; left: 59px; margin: 0; color: #484848; font-size: 12px;  }
+#chatroom .content .chatroom_chat .receive_group .chattinguser_img { position: absolute; top: 9px; left: 0; width: 51px; height: 51px; border-radius: 25.5px; border: 6px solid #F4F4F4; }
+#chatroom .content .chatroom_chat .receive_group .message_box { float: left; min-width: 100px; max-width: 226px; min-height: 32px; margin-left: 25px; padding: 9px 15px 11px 32px;  background-color: #FFF; border-radius: 2px; box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1); }
+#chatroom .content .chatroom_chat .receive_group .send_file { padding: 6px 3px 1px 0px; }
+#chatroom .content .chatroom_chat .receive_group .send_file p { margin: 0px; }
+#chatroom .content .chatroom_chat .receive_group .file_preview { margin: 10px 3px 8px 0px; }
+#chatroom .content .chatroom_chat .receive_group .file_img_result { width: 130px !important; margin: 8px 0px 9px 0px; }
+#chatroom .content .chatroom_chat .receive_group .file_save { color: #494949; font-size: 12px; text-decoration: underline; clear: both; }
+#chatroom .content .chatroom_chat .receive_group .send_file_message { color: #494949; font-size: 12px; line-height: 5px; }
+#chatroom .content .chatroom_chat .receive_group .progress_box { position: relative; margin-top: 8px; }
+#chatroom .content .chatroom_chat .receive_group .progress { position: relative; width: 155px !important; height: 14px !important; margin: 0px 22px 0px 0px; background-color : #4A4A4A; border-top: 1px solid #CFCFCF; border-bottom: 1px solid #7A7A7A; border-right: 1px solid #555; border-radius: 0px; box-shadow: 0 0 4px rgba(0,0,0,0); }
+#chatroom .content .chatroom_chat .receive_group .progress-bar { background-color : #2B94D6; }
+#chatroom .content .chatroom_chat .receive_group .progress span { position: absolute; top: 0; left: 0; padding-left: 5px; color: #FFF; font-size: 10px; line-height: 11px; }
+#chatroom .content .chatroom_chat .receive_group .progressbar_cancel { position: absolute; top: 0; left: 160px; width: 14px; height: 14px; }
+#chatroom .content .chatroom_chat .receive_group .progressbar_cancel img { vertical-align: top; }
+#chatroom .content .chatroom_chat .receive_group .message { float: left; color: #494949; font-size: 12px; word-break: break-all;}
+#chatroom .content .chatroom_chat .receive_group .waiting_message_box { padding: 6px 0px 4px; }
+#chatroom .content .chatroom_chat .receive_group .system_message { margin-top: 12px; color: #333333; font-size: 10px; }
+#chatroom .content .chatroom_chat .receive_group .system_message span { color: #91DFE9; }
+#chatroom .content .chatroom_chat .receive_group .waiting_message_box .waiting_message { color: #333333; font-weight: bold; font-size: 13px; }
+#chatroom .content .chatroom_chat .receive_group .waiting_message_box .waiting_message_alarm { margin: 7px 0px 0px 0px; color: #747474; font-size: 10px; }
+#chatroom .content .chatroom_chat .receive_group .read_num { position: absolute; bottom: 24px; right: 41px; color: #E40000; font-size: 9px; }
+#chatroom .content .chatroom_chat .receive_group .waiting_time { position: absolute; bottom: 20px; right: 0; width: 32px !important; height: 17px !important; }
+#chatroom .content .chatroom_chat .receive_group .waiting_time span { position: absolute; bottom: 20px; top: 3px; right: 5px; color: #5D5D5D; font-size: 9px; }
+#chatroom .content .chatroom_chat .receive_group .message_time { position: absolute; bottom: 0; right: 0; color: #5A5A5A; font-size: 10px; }
+#chatroom .content .chatroom_chat .send_group { float: right; position: relative; width:70%; min-width: 308px; margin-top: 20px; padding: 19px 3px 0px 0px; display: block; clear: both; }
+#chatroom .content .chatroom_chat .send_group .my_img { position: absolute; top: 0; right: 0; width: 51px; height: 51px; border-radius: 25.5px; border: 6px solid #F4F4F4; }
+#chatroom .content .chatroom_chat .send_group .message_box { margin-left: 60px; margin-right: 25px; padding: 14px; color: #FFF; font-size: 14px; background-color: #2B94D6; border-radius: 2px; border: 1px solid #B0B0B0; }
+#chatroom .content .chatroom_chat .send_group:last-child .message_box { font-size: 17px; }
+#chatroom .content .chatroom_chat .send_group .send_file { padding: 0px 0px 1px 1px; }
+#chatroom .content .chatroom_chat .send_group .send_file_message { color: #F5F9FC; font-size: 13px; line-height: 5px; }
+#chatroom .content .chatroom_chat .send_group .file_preview { margin-top: 10px; }
+#chatroom .content .chatroom_chat .send_group .system_message { margin-top: 12px; color: #F5F9FC; font-size: 10px; }
+#chatroom .content .chatroom_chat .send_group .system_message span { color: #91DFE9; }
+#chatroom .content .chatroom_chat .send_group .progress_box { position: relative; margin-top: 8px; }
+#chatroom .content .chatroom_chat .send_group .progress { position: relative; width: 155px !important; height: 13px !important; margin: 0px 40px 0px 0px; background-color : #FFF; border-right: 1px solid #C1E0F3; border-radius: 0px; box-shadow: 0 0 4px rgba(0,0,0,0); }
+#chatroom .content .chatroom_chat .send_group .progress-bar { background-color : #B6FFF2; }
+#chatroom .content .chatroom_chat .send_group .progress span { position: absolute; top: 0; left: 0; padding-left: 5px; color: #333; font-size: 10px; line-height: 13px; }
+#chatroom .content .chatroom_chat .send_group .progressbar_cancel { position: absolute; top: 0; left: 160px; width: 14px; height: 14px; }
+#chatroom .content .chatroom_chat .send_group .progressbar_cancel img { vertical-align: top; }
+#chatroom .content .chatroom_chat .send_group .message { line-height: 4px; white-space: pre-line; }
+#chatroom .content .chatroom_chat .send_group .sending_fail_button { position: absolute; bottom: 19px; left: 0; width: 47px !important; height: 19px !important; }
+#chatroom .content .chatroom_chat .send_group .sending_fail_button img { position: absolute; top: 0; left: 0; width: 47px !important; height: 19px !important; }
+#chatroom .content .chatroom_chat .send_group .read_num { position: absolute; bottom: 24px; left: 41px; color: #E40000; font-size: 9px; }
+#chatroom .content .chatroom_chat .send_group .resending { position: absolute; top: 1px; left: 1px; width: 22px !important; height: 17px !important; }
+#chatroom .content .chatroom_chat .send_group .sending_cancel { position: absolute; top: 1px; right: 1px; width: 22px !important; height: 17px !important; }
+#chatroom .content .chatroom_chat .send_group .message_loading { position: absolute; bottom: 0; left: 0; color: #333; font-size: 10px; text-align: right; }
+#chatroom .content .chatroom_chat .send_group .message_loading img { width: 13px !important; height: 13px !important; margin-right: 5px; }
+#chatroom .content .chatroom_chat .send_group .message_time { position: absolute; bottom: 0; left: 0; color: #333; font-size: 10px; }
+#chatroom .down_contents_navigation { position: absolute; bottom: 8px; left: 15px; z-index: 100; width: 336px !important; padding: 5px; background-color: #FEFEFE; border: 1px solid #B4B4B4; border-radius: 1px; }
+#chatroom .content .down_contents_navigation .write_user_img { float: left; width: 45px; height: 45px; border-radius: 22.5px; }
+#chatroom .content .down_contents_navigation p { position: absolute; top: 50%; left: 60px; transform: translateY(-50%); margin: 0px; color: #262626; }
+#chatroom .content .down_navigation { float: right; margin: 14px 4px 0px 0px; }
+#chatroom .footer { position: absolute; bottom: 0; width: 100%; height: 36px; border-top: 1px solid #EAEAEA; }
+#chatroom .footer .more_button{ float: left; position: relative; z-index:10; width: 35px !important; height: 36px; background-color: #2BA2DB; border: 0px; }
+#chatroom .footer .send_bar { float: left; width: 100%; min-height: 36px; padding: 0 60px 0 40px; color: #262626; font-size: 12px; background-color: #FFF; border: 0px; position: absolute; }
+#chatroom .footer .send_button { float: right; position: relative; z-index:10; width: 57px !important; height: 36px; color: #FFFFFF; font-size: 16px; font-weight: bold; background-color: #2BA2DB; border: 0px; }
+#chatroom .hide_menu { position: absolute; bottom: 0; z-index: 1000; width: 100%; height: 84px !important; background-color: #FFF; }
+#chatroom .hide_menu a { float: left; position: relative; width: 183px !important; height: 42px !important; padding: 10px 38px 9px 40px; color: #000; font-weight: bold; }
+#chatroom .hide_menu input[type="file"] { display: block !important; position: absolute; top: 0; left: 0; width: 183px !important; height: 42px !important; opacity: 0 !important; overflow: hidden !important; }
+#chatroom .hide_menu a:hover, .hide_menu a:focus { color: #000; }
+#chatroom .hide_menu a:active { color: #2B94D6; }
+#chatroom .hide_menu img { margin-right: 9px; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Capture Notify Popup
+ ******************************************************************************/
+#capture_notify_popup { overflow: hidden; height:210px; width: 320px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#capture_notify_popup .header { position: relative; height: 46px; padding: 20px 0px 10px 20px; }
+#capture_notify_popup .header .close_button { position: absolute; top: 20px; right: 21px; }
+#capture_notify_popup .header h2 { width: 50%;  font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#capture_notify_popup .content { padding: 30px 20px 10px; color: #666; font-size: 14px; text-align: center; border-top: 1px solid #D2D2D2; }
+#capture_notify_popup .content .blue { color: #2B94D6; }
+#capture_notify_popup .footer { padding: 20px; }
+#capture_notify_popup .footer button { width: 134px; height: 40px; color: #2BA2DB; font-size: 13px; font-weight: bold; background-color: #FFF; border: 1px solid #2797CD; border-radius: 4px; }
+#capture_notify_popup .footer .show_btn { float: right; color: #FFF; background-color: #2BA2DB; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room User Out Notify Popup
+ ******************************************************************************/
+#user_out_notify_popup { overflow: hidden; width: 320px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#user_out_notify_popup .header { position: relative; height: 46px; padding: 20px 0px 10px 20px; }
+#user_out_notify_popup .header .close_button { position: absolute; top: 20px; right: 21px; }
+#user_out_notify_popup .header h2 { width: 50%;  font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#user_out_notify_popup .content { padding: 30px 20px 10px; color: #666; font-size: 14px; text-align: center; border-top: 1px solid #D2D2D2; }
+#user_out_notify_popup .content .blue { color: #2B94D6; }
+#user_out_notify_popup .footer { padding: 20px; }
+#user_out_notify_popup .footer button { width: 134px; height: 40px; color: #2BA2DB; font-size: 13px; font-weight: bold; background-color: #FFF; border: 1px solid #2797CD; border-radius: 4px; }
+#user_out_notify_popup .footer .ok_btn { float: right; color: #FFF; background-color: #2BA2DB; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Work Choice Popup
+ ******************************************************************************/
+#work_choice_popup { overflow: hidden; width: 320px; height: 260px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#work_choice_popup .header { position: relative; height: 46px; padding: 20px 0px 10px 20px; }
+#work_choice_popup .header .close_button { position: absolute; top: 20px; right: 21px; }
+#work_choice_popup .header h2 { width: 50%;  font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#work_choice_popup .content { padding: 6px 20px 0px; color: #666; font-size: 14px; text-align: center; border-top: 1px solid #D2D2D2; }
+#work_choice_popup .content .radio_menu .btn { display: block; width: 100%; margin: 15px 0px 0px 0px; padding: 0px; color: #999; font-size: 11px; font-weight: bold; text-align: left; }
+#work_choice_popup .content .radio_menu .btn:hover { color: #999; }
+#work_choice_popup .content .radio_menu .btn:active { box-shadow: inset 0 3px 5px rgba(0,0,0,0); }
+#work_choice_popup .content .radio_menu .btn.active { color: #333;  box-shadow: inset 0 3px 5px rgba(0,0,0,0); }
+#work_choice_popup .content .radio_menu .btn .radio_img { padding: 9.5px; background: url("../images/00_radio_off.png") center no-repeat; background-size: 18px; }
+#work_choice_popup .content .radio_menu .btn.active .radio_img { background: url("../images/00_radio_on.png") center no-repeat; background-size: 18px; }
+#work_choice_popup .footer { padding: 20px; }
+#work_choice_popup .footer button { width: 100%; height: 40px; color: #FFF; font-size: 13px; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Modify Popup
+ ******************************************************************************/
+#modify_popup { overflow: hidden; width: 320px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#modify_popup .header { position: relative; height: 46px; padding: 20px 0px 10px 20px; }
+#modify_popup .header .close_button { position: absolute; top: 20px; right: 21px; }
+#modify_popup .header h2 { width: 50%;  font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#modify_popup .content { padding:  20px 20px 0px; color: #333; font-size: 13px; border-top: 1px solid #D2D2D2; }
+#modify_popup .content h4 { margin-bottom: 10px; color: #2BA2DB; font-size: 13px; font-weight: bold; }
+#modify_popup .content textarea { width: 276px; height: 81px; padding: 5px 10px; border: 1px solid #D0D0D0; border-radius: 5px; }
+#modify_popup .content textarea::-webkit-input-placeholder { color: #666; }
+#modify_popup .content textarea::-moz-placeholder          { color: #666; } /* Firefox 19+ */
+#modify_popup .content textarea:-moz-placeholder           { color: #666; } /* Firefox 18- */
+#modify_popup .content textarea:-ms-input-placeholder      { color: #666; }
+#modify_popup .footer { padding: 20px; }
+#modify_popup .footer button { width: 134px; height: 40px; color: #2BA2DB; font-size: 13px; font-weight: bold; background-color: #FFF; border: 1px solid #2797CD; border-radius: 4px; }
+#modify_popup .footer .ok_btn { float: right; color: #FFF; background-color: #2BA2DB; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Setting Popup
+ ******************************************************************************/
+#setting_popup { overflow: hidden; width: 320px; height: 550px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#setting_popup .header { position: relative; height: 46px; padding: 21px 0px 10px 23px; }
+#setting_popup .header h4 { font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#setting_popup .header .setting_save_button { position: absolute; top: 17px; right: 20px; width: 42px; height: 19px; font-size: 11px; color: #FFF; background-color: #2BA2DB; border-radius: 5px; border: 0px; }
+#setting_popup .radio_panel { height: 103px; padding: 15px 20px; font-weight: bold; background-color : #FFF; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#setting_popup .radio_panel .radio_menu { width: 100%; height: 18px !important; margin: 5px 0px; font-size: 13px; line-height: 19px; }
+#setting_popup .radio_panel .radio_menu > span {  }
+#setting_popup .radio_panel .radio_menu .btn { display: block; float: right; margin: 0px 0px 0px 22px; padding: 0px; color: #999; font-size: 13px; font-weight: bold; }
+#setting_popup .radio_panel .radio_menu .btn:hover { color: #999; }
+#setting_popup .radio_panel .radio_menu .btn:active { box-shadow: inset 0 3px 5px rgba(0,0,0,0); }
+#setting_popup .radio_panel .radio_menu .btn.active { color: #333;  box-shadow: inset 0 3px 5px rgba(0,0,0,0); }
+#setting_popup .radio_panel .radio_menu .btn .radio_img { padding: 9px; background: url("../images/00_radio_off.png") center no-repeat; background-size: 18px; }
+#setting_popup .radio_panel .radio_menu .btn.active .radio_img { background: url("../images/00_radio_on.png") center no-repeat; background-size: 18px; }
+#setting_popup .radio_panel .radio_menu .radio_notify { float: right; }
+#setting_popup .radio_panel .radio_menu .radio_empty { float: right; }
+#setting_popup .radio_panel .radio_menu .chatroom_info { color: #333; }
+#setting_popup .radio_panel .radio_menu .chatroom_info:active { text-decoration: none; }
+#setting_popup .sub_panel { width: 100%; height: 37px !important; padding: 10px 22px; background-color : #F2F2F2; border-bottom: 1px solid #D2D2D2; }
+#setting_popup .sub_panel a { padding: 0px; color: #2BA2DB; font-size: 13px; font-weight: bold; text-align: left; background: none; border: 0px; }
+#setting_popup .sub_panel a img { margin-right: 5px; }
+#setting_popup .content { position: relative; width: 100%; height: 229px; background-color : #FFF; }
+#setting_popup .content .setting_user_list { height: 221px !important; margin: 8px 15px 0px 20px; }
+#setting_popup .content .setting_user_list .setting_list_item { display: block; position: relative; width: 275px !important; height: 60px !important; margin-bottom: 0px; border-bottom: 1px solid #E6E6E6; }
+#setting_popup .content .setting_user_list .setting_list_item .user_img { float: left; width: 36px; height: 36px; margin: 12px 12px 12px 0px; border-radius: 18px; }
+#setting_popup .content .setting_user_list .setting_list_item .setting_user_info_box { position: absolute; top: 50%; left: 48px; transform: translateY(-50%); }
+#setting_popup .content .setting_user_list .setting_list_item .setting_user_info_box h4.user_name { float: left; margin: 0px; font-size: 13px; color: #333; font-weight: bold; }
+#setting_popup .content .setting_user_list .setting_list_item .setting_user_info_box h6.user_group { margin: 0; padding-top: 7px; font-size: 11px; color: #999; clear: left; }
+#setting_popup .content .setting_user_list .setting_list_item .card_change { float: right; width: 66px; height: 19px; margin: 20px 10px; padding: 0px; color: #666; font-size: 11px; background-color: #FFF; border: 1px solid #B6B6B6; border-radius: 2px; }
+#setting_popup .content .setting_user_list .setting_list_item .card_change img { margin-right: 2px; }
+#setting_popup .footer { padding: 20px; }
+#setting_popup .footer button { width: 100%; height: 40px !important; margin-bottom: 5px; font-size: 13px; color: #FFF; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Info Popup
+ ******************************************************************************/
+#chatroom_info_popup { overflow: hidden; width: 320px; height: 320px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#chatroom_info_popup .header { position: relative; height: 46px; padding: 20px 0px 10px 20px; }
+#chatroom_info_popup .header .close_button { position: absolute; top: 20px; right: 21px; }
+#chatroom_info_popup .header h2 { width: 50%;  font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#chatroom_info_popup .sub_panel { position: relative; width: 100%; height: 125px; padding: 17px 20px 20px; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#chatroom_info_popup .sub_panel .chatroom_info_img { float: left; width: 82px !important; margin-right: 9px; padding: 1px; border: 2px solid #2B94D6; border-radius: 38px; }
+#chatroom_info_popup .sub_panel .chatroom_info_img img { float: left; width: 38px !important; height: 38px !important; }
+#chatroom_info_popup .sub_panel .chatroom_info_img .chatmember_img1 { border-top-left-radius: 38px; }
+#chatroom_info_popup .sub_panel .chatroom_info_img .chatmember_img2 { border-top-right-radius: 38px; }
+#chatroom_info_popup .sub_panel .chatroom_info_img .chatmember_img3 { border-bottom-left-radius: 38px; }
+#chatroom_info_popup .sub_panel .chatroom_info_img .chatmember_img4 { border-bottom-right-radius: 38px; }
+#chatroom_info_popup .sub_panel .chatroom_member_name { position: absolute; top: 50%; width: auto; left: 110px; transform: translateY(-50%); }
+#chatroom_info_popup .sub_panel .chatroom_member_name h4 { margin: 0px; padding-right: 20px; color: #2B94D6; font-size: 11px; white-space: normal; }
+#chatroom_info_popup .content { width: 100%; height: 160px !important; padding: 0px 20px 40px; font-size: 15px; font-weight: bold; }
+#chatroom_info_popup .content > div a { display: block; width: 100%; padding: 20px 0px; color: #333; border-bottom: 1px solid #E6E6E6; }
+#chatroom_info_popup .content > div a:hover { color: #2B94D6; }
+#chatroom_info_popup .content > div a .fa-chevron-right{ float: right; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room invite Popup
+ ******************************************************************************/
+#chatroom_invite_popup { overflow: hidden; width: 320px; height: 500px; background-color: #FFFFFF; border-radius: 5px; border: 2px solid #2BA2DC; }
+#chatroom_invite_popup .header { position: relative; height: 50px; padding: 15px; color: #2BA2DB; border-bottom: 1px solid #D2D2D2; }
+#chatroom_invite_popup .header .close_button { position: absolute; top: 15px; right: 21px; }
+#chatroom_invite_popup .header h2 { font-size: 18px; text-align: left; padding-left: 10px; padding-top: 5px; font-weight: bold; }
+#chatroom_invite_popup .slide_panel { position: relative; height: 75px !important; }
+#chatroom_invite_popup .slide_panel div { height: 75px; padding: 0; }
+#chatroom_invite_popup .slide_panel div.side { z-index: 120; width: 40px !important; background-color: #FFFFFF; }
+#chatroom_invite_popup .slide_panel div.side.prev {position: absolute; top: 0; left: 0; padding-right: 10px; }
+#chatroom_invite_popup .slide_panel div.side.prev a img { padding-top: 30px; float: right; background: none; -webkit-box-shadow: 0 0 4px rgba(0,0,0,0); -moz-box-shadow: 0 0 4px rgba(0,0,0,0); box-shadow: 0 0 4px rgba(0,0,0,0); }
+#chatroom_invite_popup .slide_panel div.side.next {position: absolute; top: 0; right: 0; padding-left: 10px; }
+#chatroom_invite_popup .slide_panel div.side.next a img { padding-top: 30px; background: none; -webkit-box-shadow: 0 0 4px rgba(0,0,0,0); -moz-box-shadow: 0 0 4px rgba(0,0,0,0); box-shadow: 0 0 4px rgba(0,0,0,0); }
+#chatroom_invite_popup .slide_panel div.side a { display: block; width: 100%; height: 100%; }
+#chatroom_invite_popup .slide_panel div.list { position:absolute; z-index: 110; top: 0; left: 30px; padding-top: 10px; margin-left: 0; overflow: hidden;}
+#chatroom_invite_popup .slide_panel div.list ul { list-style: none; padding:0; display: inline-block; }
+#chatroom_invite_popup .slide_panel div.list ul li { position: relative; float: left; width: 55px; height: 55px; margin-bottom: 20px;}
+#chatroom_invite_popup .slide_panel div.list ul li img.chatuser_img { width: 40px; height: 40px; border-radius: 20px; }
+#chatroom_invite_popup .slide_panel div.list ul li p.chatuser_name { padding-top: 4px; text-align: center; font-size: 10px; white-space: nowrap; text-overflow: ellipsis; }
+#chatroom_invite_popup .slide_panel div.list ul li span.invite_cancel { position: absolute; width: 14px; height: 14px; font-size: 10px; right: 5px; bottom: 14px; background-color: #E40000; color: #FFFFFF; border-radius: 7px;}
+#chatroom_invite_popup .search_panel { height: 49px !important; padding: 10px 20px; background-color : #F2F2F2; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#chatroom_invite_popup .search_panel .search_bar { float: left; width: 219px !important; height: 29px !important; padding-left: 12px; font-size: 13px; border: 1px solid #D0D0D0; border-radius: 4px; }
+#chatroom_invite_popup .search_panel .search_button { float: right; width: 50px; height: 29px; font-size: 14px; color: #FFF; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2BA2DB; border-radius: 4px; }
+#chatroom_invite_popup .content { height: 245px !important; padding: 10px 20px 0px; }
+#chatroom_invite_popup .content .chatroom_invite_list { overflow-x: hidden; overflow-y: scroll; width: 100%; height: 233px !important; }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item { display: block; position: relative; width: 275px !important; height: 60px !important; margin-bottom: 0px; border-bottom: 1px solid #E6E6E6; }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item.disabled { background: #FFF; opacity: 0.3; }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item input[type="checkbox"] + label { margin: 23px 16px 0px 0px; }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item .user_img { float: left; width: 36px; height: 36px; margin: 12px 12px 12px 0px; border-radius: 18px; }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item .invite_info_box { position: absolute; top: 50%; left: 87px; transform: translateY(-50%); }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item .invite_info_box h4.user_name { float: left; margin: 0px; font-size: 13px; color: #333; font-weight: bold; }
+#chatroom_invite_popup .content .chatroom_invite_list .invite_list_item .invite_info_box h6.user_email { margin: 0; padding-top: 7px; font-size: 10px; color: #999; clear: left; }
+#chatroom_invite_popup .footer { padding: 20px; }
+#chatroom_invite_popup .footer button { width: 100%; height: 40px; color: #FFF; font-size: 13px; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Explore Popup
+ ******************************************************************************/
+#cc_explore_popup { overflow: hidden; width: 320px; height: 540px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#cc_explore_popup .header { position: relative; height: 50px; padding: 15px; color: #2BA2DB; }
+#cc_explore_popup .header .close_button { position: absolute; top: 15px; right: 21px; }
+#cc_explore_popup .header h2 { font-size: 18px; text-align: left; padding-left: 10px; padding-top: 5px; font-weight: bold; }
+#cc_explore_popup .sub_panel { width: 100%; height: 57px !important; padding: 20px; background-color : #F2F2F2; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#cc_explore_popup .sub_panel h4 { color: #333; font-size: 15px; font-weight: bold; }
+#cc_explore_popup .sub_panel h4 .blue { color: #2B94D6; }
+#cc_explore_popup .content { width: 100%; height: 303px; padding: 10px 10px 20px 20px; background-color : #FFF;  }
+#cc_explore_popup .content .explore_list { height: 283px; }
+#cc_explore_popup .content .explore_list .explore_list_item { display: block; position: relative; width: 275px !important; height: 60px !important; margin-bottom: 0px; padding: 20px 10px; border-bottom: 1px solid #E6E6E6; }
+#cc_explore_popup .content .explore_list .explore_list_item .explore_box { position: absolute; top: 50%; left: 43px; transform: translateY(-50%); }
+#cc_explore_popup .content .explore_list .explore_list_item .explore_box h4 { margin: 0px; color: #333; font-size: 14px; font-weight: bold; }
+#cc_explore_popup .info_panel { width: 100%; height: 56px; padding: 10px 20px; color: #333; font-size: 12px; font-weight: bold; background-color : #FFF; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#cc_explore_popup .info_panel .now_directory { float: left; margin-bottom: 5px; }
+#cc_explore_popup .info_panel .all_file { float: left; clear: left; }
+#cc_explore_popup .info_panel .all_size { float: right; }
+#cc_explore_popup .footer { height: 80px; padding: 20px; }
+#cc_explore_popup .footer .ok_btn { width: 100%; height: 40px; color: #FFF; font-size: 13px; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px; }
+
+/******************************************************************************
+ * ConferenceChat - ConferenceChat Room Explore Popup
+ ******************************************************************************/
+#subexplore_popup { overflow: hidden; width: 320px; background-color: #FFF; border: 2px solid #2BA2DB; border-radius: 5px; }
+#subexplore_popup .header { position: relative; height: 46px; padding: 20px 0px 10px 20px; }
+#subexplore_popup .header .close_button { position: absolute; top: 20px; right: 21px; }
+#subexplore_popup .header h2 { width: 50%; font-size: 15px; color: #2BA2DB; font-weight: bold; line-height: 15px; }
+#subexplore_popup .sub_panel { width: 100%; height: 57px !important; padding: 20px; background-color : #F2F2F2; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#subexplore_popup .sub_panel h4 { color: #333; font-size: 15px; font-weight: bold; }
+#subexplore_popup .sub_panel h4 .blue { color: #2B94D6; }
+#subexplore_popup .content { width: 100%; height: 242px; padding: 10px 20px; }
+#subexplore_popup .content .explore_list { height: 222px; }
+#subexplore_popup .content .explore_list .explore_list_item { display: block; position: relative; width: 275px !important; height: 60px !important; margin-bottom: 0px; padding: 15px 0px; border-bottom: 1px solid #E6E6E6; }
+#subexplore_popup .content .explore_list .explore_list_item input[type="checkbox"] + label { margin: 7.5px 13px 7.5px 0px; }
+#subexplore_popup .content .explore_list .explore_list_item .invite_info_box { position: absolute; top: 50%; left: 62px; transform: translateY(-50%); }
+#subexplore_popup .content .explore_list .explore_list_item .invite_info_box .file_name { margin: 0px 0px 6px 0px; color: #333; font-size: 14px; font-weight: bold; }
+#subexplore_popup .content .explore_list .explore_list_item .invite_info_box .file_info { margin: 0px; color: #999; font-size: 11px; }
+#subexplore_popup .info_panel { width: 100%; height: 56px; padding: 10px 20px; color: #333; font-size: 12px; font-weight: bold; border-top: 1px solid #D2D2D2; border-bottom: 1px solid #D2D2D2; }
+#subexplore_popup .info_panel .now_directory { float: left; margin-bottom: 10px; }
+#subexplore_popup .info_panel .all_file { float: left; clear: left; }
+#subexplore_popup .info_panel .all_size { float: right; }
+#subexplore_popup .footer { padding: 20px; }
+#subexplore_popup .footer button { width: 100%; height: 40px; color: #FFF; font-size: 13px; font-weight: bold; background-color: #2BA2DB; border: 1px solid #2797CD; border-radius: 4px; }
+
+/******************************************************************************
+ * ConferenceChat - Popup window
+ ******************************************************************************/
+#chatroom { margin: auto; height: 100%; }
