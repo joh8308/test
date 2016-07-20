@@ -1,0 +1,171 @@
+/******************************************************************************
+ * CoCo List - Commons
+ ******************************************************************************/
+div[ui-view="cocolist_content"] { height: inherit; background-color: #EFEFEF; }
+/******************************************************************************
+ * CoCo List - Instance Alert
+ ******************************************************************************/
+#inst_alert { width: 408px; max-height: 173px; border: 1px solid #E0E0E0; border-radius: 5px; box-shadow: 3px 3px 1px #171717;}
+#inst_alert.without_btn  { max-height: 120px; }
+#inst_alert .inst_alert_top { padding: 18px 28px; }
+#inst_alert .inst_alert_top div.col-xs-3 { width: 80px !important; padding: 0px; }
+#inst_alert .inst_alert_top img { width: 80px; height: 80px; border-radius: 40px; float: left; }
+#inst_alert .inst_alert_top div.col-xs-9 { padding: 0 17px; }
+#inst_alert .inst_alert_top .title { margin-top: 20px; margin-bottom: 0; color: #232739; font-size: 18px; font-weight: bold; }
+#inst_alert .inst_alert_top .message { margin: 14px 0; color: #95969C; font-size: 14px; font-weight: bold; }
+#inst_alert .inst_alert_bottom { width: 100%; padding: 12px 0; font-size: 18px; border-top: 3px solid #E0E0E0; }
+#inst_alert .inst_alert_bottom a { font-weight: bold; text-align: center; }
+#inst_alert .inst_alert_bottom .close_btn { color: #2B94D6; border-right: 2px solid #CACBCC; }
+#inst_alert .inst_alert_bottom .view_btn { color: #232739; }
+
+/******************************************************************************
+ * CoCo List - Coco Alert
+ ******************************************************************************/
+#coco_alert { width: 360px; height: 570px; border-radius: 5px; padding: 0px; overflow: hidden;}
+
+/* AFK alert */
+#coco_alert.AFK { height: 665px; }
+#coco_alert.AFK .alert_list { height: 485px; }
+
+#coco_alert .alert_title { position: relative; width: 100%; height: 50px; background-color: #2BA2DB; color: #FFFFFF; padding: 15px; }
+#coco_alert .alert_title h2 { font-size: 18px; font-weight: bold; margin: 0px; text-align: center; }
+#coco_alert .alert_title a { position: absolute; top: 10px; right: 15px; }
+#coco_alert .alert_message { padding: 10px 5px 10px 10px; }
+#coco_alert .alert_list { height: 420px; }
+#coco_alert .alert_notice_top { color: #2BA2DB; margin: 10px; }
+#coco_alert .alert_notice_top h5 { font-size: 12px; font-weight: bold; margin-top: 0; margin-bottom: 4px; }
+#coco_alert .alert_notice_top h5:first-child { margin-top: 10px; }
+#coco_alert .alert_notice_top h5:last-child { margin-bottom: 10px; }
+#coco_alert .alert_list .alert_item { margin-top: 10px; margin-left: 10px; margin-right: 10px; margin-bottom: 0; float: left; cursor: pointer;}
+#coco_alert .alert_list .alert_item:last-child { margin: 10px; }
+#coco_alert .alert_list .alert_item.underline { border-bottom: 1px solid #E6E6E6; }
+#coco_alert .alert_list .alert_item .title { width: 60%; font-size: 13px; color: #2BA2DB; margin: 0; float: left; }
+#coco_alert .alert_list .alert_item .date { width: 40%; font-size: 11px; color: #333333; margin: 0; float: left;  text-align: right;}
+#coco_alert .alert_list .alert_item ul.message { width: 100%; padding-left: 20px; margin-top: 12px; float: left; font-size: 11px; color: #666666; }
+#coco_alert .alert_list .alert_item ul.message li { width: 100%; float: left; text-align: left; }
+#coco_alert .alert_notice_bottom { color: #333333; margin: 10px 20px; }
+#coco_alert .alert_notice_bottom h5 { font-size: 12px; font-weight: bold; }
+#coco_alert .alert_btn_group { padding: 10px 20px 20px 20px; text-align: center; }
+#coco_alert .alert_btn_group .alert_setting_btn { display: block; width: 153px; padding: 12px 0; background-color: #FFFFFF; color: #2BA2DB; font-size: 14px; border: 1px solid #2BA2DB; border-radius: 5px; margin-right: 10px; float: left; }
+#coco_alert .alert_btn_group .ok_btn { display: block; width: 153px; padding: 12px 0; background-color: #2BA2DB; color: #FFFFFF; font-size: 14px;  border: 1px solid #2797CD; border-radius: 5px; float: right; }
+
+/******************************************************************************
+ * CoCo List - List View
+ ******************************************************************************/
+#list_view_content { background-color: #EFEFEF; width: 100%; height: 100%; padding: 0;}
+#list_view_content .list_view { position:relative; padding: 20px 15px; }
+#list_view_content .list_view .coco_list { position: relative; }
+#list_view_content .list_view .coco_list .add_coco { float: left; position: relative; color: #A5A5A5; padding: 0; text-align: center; cursor: pointer;}
+#list_view_content .list_view .coco_list .add_coco span.add_coco_label { position: absolute; top: 170px; left: 0; width: 100%;}
+#list_view_content .list_view .coco_list .coco { float: left; position: relative; width: 234px; height: 262px; }
+#list_view_content .list_view .coco_list .coco h4 { position: absolute; top: 50%; left: 0; transform: translateY(-50%); z-index: 4; width: 100%; color: #FFF; margin: 0; padding: 0px 25px; font-size: 20px; text-align: center; }
+#list_view_content .list_view .coco_list .coco label { position: absolute; top: 165px; left: 50%; transform: translateX(-50%); z-index: 4; width: 54px; height: 24px; margin: 0; color: #FFF; font-size: 14px; text-align: center; background: #2BA2DB; border-radius: 5px; line-height: 24px; }
+#list_view_content .list_view .coco_list .coco .coco_img { position: absolute; z-index: 1; width: 234px; height: 262px;  }
+#list_view_content .list_view .coco_list .coco .black { position: absolute; z-index: 2; width: 234px; height: 262px; background-color: rgba(0, 0, 0, 0.7); }
+#list_view_content .list_view .coco_list .coco .coco_border { position: absolute; top: 0px; left: 0px; z-index: 4; }
+#list_view_content .list_view .coco_list .coco .alram { position: absolute; top: 32px; right: 39px; z-index: 5; width: 43px; height: 43px; color: #101010; font-size: 15px; text-align: center; line-height: 35px; background: #FFF; border: 4px solid #2BA2DB; border-radius: 21.5px; box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.3); }
+#list_view_content .list_view .coco_list .coco.manager_coco .alram { border: 4px solid #E5BA3D; }
+
+/* Gallery popup */
+#popup { z-index: 1; width: 356px;  background-color: #FFFFFF; border: 2px solid #2AB2DB; border-radius: 4px; background-color: #FFFFFF; padding: 20px; }
+#popup .header { width: 100%; color: #2BA2DB; font-size: 14px; margin-bottom: 12px; float: left; }
+#popup .header img { float: left; margin-right: 12px; }
+#popup .header h4 { float: left; font-weight: bold; }
+#popup .header a { float: right; font-size: 14px; }
+#popup .content { max-height: 390px; }
+#popup .content ul.sub_coco_list { margin-top : 0; padding-left: 0; font-weight:900;}
+#popup .content ul.sub_coco_list li.sub_coco_item { list-style: none; padding-left: 0; margin-bottom: 15px; text-align: left; }
+#popup .content ul.sub_coco_list li.sub_coco_item:last-child { margin-bottom: 0; }
+
+/* Add Coco Popup */
+#add_coco_popup { width: 360px; height: 720px; border-radius: 5px; overflow: hidden; }
+#add_coco_popup .header { position: relative; width: 100%; height: 50px; background-color: #2BA2DB; color: #FFFFFF; padding: 15px; }
+#add_coco_popup .header h2 { font-size: 18px; font-weight: bold; margin: 0; text-align: center; }
+#add_coco_popup .header a.close_btn { position: absolute; top: 10px; right: 15px; }
+#add_coco_popup .sub_panel { width: 100%; height: 50px; background-color: #F2F2F2; color: #333333; border-bottom: 1px solid #CCCCCC; padding: 14px 20px; font-size: 15px; }
+#add_coco_popup .sub_panel h2 { margin: 0; font-size: 15px; font-weight: bold; float: left; padding-top: 3px; }
+#add_coco_popup .sub_panel input {display: none; }
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat + label { float: right; padding: 2px; width: 70px; height: 24px; background-color: #dddddd; border-radius: 24px; transition: background 0.4s; }
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after { display: block; position: absolute; content: ""; }
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat + label:before { top: 1px; left: 1px; bottom: 1px; right: 1px; background-color: #fff; border-radius: 24px; color: #DDDDDD; padding-left: 35px; content: "OFF"; transition: background 0.4s; }
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat + label:after { top: 2px; left: 2px; bottom: 2px; width: 20px; background-color: #dddddd; border-radius: 16px; transition: margin 0.4s, background 0.4s; }
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat:checked + label { background-color: #2BA2DB; }
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat:checked + label:before { padding-left: 5px; color: #2BA2DB; content: "ON";}
+#add_coco_popup .sub_panel input.cmn-toggle-round-flat:checked + label:after { margin-left: 46px; background-color: #2BA2DB; }
+#add_coco_popup .content { padding: 20px 20px 0 20px; color: #2BA2DB; font-size: 15px; }
+#add_coco_popup .content input, textarea { width: 100%; color: #000000; padding: 4px; font-size: 13px; border: 1px solid #D0D0D0; border-radius: 4px;}
+#add_coco_popup .content input { height: 27px; margin-bottom: 4px; }
+#add_coco_popup .content textarea { height: 117px; margin-bottom: 16px; resize: none; } /* fixed size */
+#add_coco_popup .content h3 { margin-top: 14px; margin-bottom: 10px; font-size: 16px; font-weight: bold; }
+#add_coco_popup .content h3:first-child { margin-top: 0; }
+#add_coco_popup .content .guide_text { color: #2BA2DB; font-size: 12px; padding-bottom: 10px;}
+#add_coco_popup .content .guide_text.hidden { visibility: hidden; display: block !important; }
+#add_coco_popup .content .add_img_btn { display: block; width: 100%; height: 38px; background-color: #FFFFFF; color: #2BA2DB; border: 1px solid #2BA2DB; padding: 10px; border-radius: 5px; font-size: 13px; font-weight: bold; vertical-align: middle; text-align: center;  }
+#add_coco_popup .content .add_img_area { width: 100%; height: 35px; padding: 10px 0; color: #000000; }
+#add_coco_popup .content .add_img_area i { float: left; margin-right: 5px;  }
+#add_coco_popup .content .add_img_area .add_img_name { width: 90%; margin-bottom: 0; font-size: 11px; float: left; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; }
+#add_coco_popup .content .add_img_preview { clear:both; width: 100%; height: 180px; background-color: #DBDBDB; color:#333333; font-size: 13px; font-weight: bold; text-align: center;}
+#add_coco_popup .content .add_img_preview p { padding-top: 80px; }
+#add_coco_popup .content .add_img_preview img { width: 100%; height: 100%; }
+#add_coco_popup .ok_btn { margin-left:20px;margin-right:20px; display: block; height: 38px; margin-top: 20px; padding: 10px;  background-color: #2BA2DB; color: #FFFFFF; border: 1px solid #2797CD; border-radius: 5px; font-size: 13px; text-align: center; }
+
+/* Add coco popup - success */
+#popup_success { width: 360px; height: 440px; border: 2px solid #2BA2DB; border-radius: 5px; padding: 20px; text-align: center; }
+#popup_success .logo { width: 180px; margin-top: 18px; }
+#popup_success .title { margin: 20px 0; color: #232739; font-size: 26px; font-weight: bold;}
+#popup_success .message { margin: 0 0 10px 0; color: #2BA2DB; font-size: 16px; font-weight: bold; }
+#popup_success .ok_btn { display: block; width: 100%; height: 38px; background-color: #2BA2DB; color: #FFFFFF; border: 1px solid #2797CD; border-radius: 5px; margin-top: 30px; margin-bottom: 20px; padding-top: 9px; font-size: 13px; font-weight: bold; text-align: center; }
+
+
+/******************************************************************************
+ * CoCo List - Gallery View
+ ******************************************************************************/
+#gallery_view_content { padding: 0px;}
+#gallery_view_content .coco_item { width: 100%; height: 260px; margin-top: 9px; border-radius: 5px; box-shadow: 5px 5px 10px #B6B6B6; margin-bottom: 22px; overflow: hidden;}
+#gallery_view_content .coco_item .coco_thumbnail { width: 45%; height: 100%; overflow: hidden; float: left;}
+#gallery_view_content .coco_item .coco_thumbnail img { width: 100%; height: 260px; top: -100%; bottom: -100%; left: -100%; right: -100%;}
+#gallery_view_content .coco_item .coco_content { width: 55%; height: 100%; float: left; padding: 40px;}
+#gallery_view_content .coco_item .coco_content .coco_title { color: #FFFFFF; }
+#gallery_view_content .coco_item .coco_content .coco_title h3 { max-width: 400px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 24px; font-weight: bold; }
+#gallery_view_content .coco_item .coco_content .coco_title span { font-size: 24px; font-weight: bold; }
+#gallery_view_content .coco_item .coco_content .coco_title h4 { min-height:17px; margin-top: 10px; font-size: 16px; }
+#gallery_view_content .coco_item .coco_content .coco_menu_group { list-style: none; width: 430px; padding-left: 0px; margin-top: 33px;}
+#gallery_view_content .coco_item .coco_content .coco_menu_group .menu_btn img { height: 18px; padding-right: 10px;}
+#gallery_view_content .coco_item .coco_content .coco_menu_group .menu_btn:hover { text-decoration: none; color: #FFFFFF; }
+/* manager */
+#gallery_view_content .coco_item.manager { background-color: #E5BA3D; }
+#gallery_view_content .coco_item.manager .coco_content .coco_menu_group .menu_btn { display:inline; width: 135px; color: #FFFFFF; background-color: #C09C31; border: 1px solid #B38F24; border-radius: 4px; box-shadow: 2px 3px 0 #CFA837; font-size: 14px; padding: 14px 12px; margin-bottom: 5px; margin-right: 5px; float: left; text-align: center;}
+/* member */
+#gallery_view_content .coco_item.member { background-color: #2BA2DB; }
+#gallery_view_content .coco_item.member .coco_content .coco_menu_group .menu_btn { display:inline; width: 135px; color: #FFFFFF; background-color: #2494C9; border: 1px solid #1F7DAA; border-radius: 4px; box-shadow: 2px 3px 0 #2793C6; font-size: 14px; padding: 14px 12px; margin-bottom: 5px; margin-right: 5px; float: left; text-align: center;}
+/* coco create button */
+#gallery_view_content .create_coco { width: 100%; padding-bottom: 50px; }
+#gallery_view_content .create_coco .create_coco_btn { display: block; width: 100%; color: #666666; border: 1px solid #C4C4C4; border-radius: 4px; box-shadow: 5px 5px 10px #B6B6B6; padding: 20px 0; font-size: 18px; font-weight: bold; text-align: center;}
+#gallery_view_content .create_coco .create_coco_btn i { color: #D6D6D6; margin-right: 10px; }
+#gallery_view_content .create_coco .create_coco_btn img { width: 24px; }
+
+/******************************************************************************
+ * CoCo List - Coco Search
+ ******************************************************************************/
+#search_coco { height: 100%; background-color: #FFFFFF; }
+#search_coco .search_area { margin: 0 auto; }
+#search_coco .search_area .search_title { margin-top: 30px; }
+#search_coco .search_area .search_title > p { padding-left: 10px; font-size: 18px; font-weight: 800; }
+#search_coco .search_area .search_title > p > span { color: #FF0000; }
+#search_coco .search_area .search_divider { height: 2px; margin-top:10px; background-color: #2BA2DB; }
+#search_coco .search_area .search_result { height: 730px; margin-top: 10px; }
+#search_coco .search_area .coco_item { height: 100px; width: 100%; padding: 20px 0; margin-left: 10px; border-bottom: 1px solid #E6E6E6; }
+#search_coco .search_area .coco_item > img { float:left; width: 60px; height: 60px; margin-right: 20px; }
+#search_coco .search_area .coco_item .coco_title { float:left; padding-top: 5px; width: 730px; }
+#search_coco .search_area .coco_item .coco_title h3 { font-size: 18px; color: #000; font-weight: 800; }
+#search_coco .search_area .coco_item .coco_title p { font-size: 14px; color: #666; }
+#search_coco .search_area .coco_item .coco_info { float:left; padding-top: 5px; width: 170px; font-size: 14px; line-height: 14px; }
+#search_coco .search_area .coco_item .coco_info .boss { margin-bottom: 8px; }
+#search_coco .search_area .coco_item .coco_info .boss > p { color: #999; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#search_coco .search_area .coco_item .coco_info .boss > p > span { margin-left: 5px; color: #333; }
+#search_coco .search_area .coco_item .coco_info .members { margin-bottom: 8px; }
+#search_coco .search_area .coco_item .coco_info .members > p { color: #999; }
+#search_coco .search_area .coco_item .coco_info .members > p > span { margin-left: 5px; color: #333; }
+#search_coco .search_area .coco_item .trade_card { float: left; cursor: pointer; }
+#search_coco .search_area .coco_item .trade_card > p { padding-top: 5px; width: 150px; height: 30px; padding: 8px; color: #fff; text-align: center; line-height: 14px; font-weight: bold; background-color: #2BA2DB; border-radius: 5px; }
