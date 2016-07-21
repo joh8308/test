@@ -11,7 +11,7 @@
 #login .login_content .service_explain .item .carousel-caption { top: 343px; left: 0; width: 100%; padding: 0; text-shadow: 0 1px 2px rgba(0, 0, 0, 0); }
 #login .login_content .service_explain .item .carousel-caption h4 { font-size: 40px; color: #FFF; font-weight: bold; }
 #login .login_content .service_explain .item .carousel-caption p { margin-top: 35px; font-size: 15px; color: #FFF; }
-#login .login_content .service_explain .carousel-control { color: #77C5F0; font-size: 70px; text-shadow: 0 1px 2px rgba(0, 0, 0, 0); background: none; background-color: transparent; border: 0; opacity: 1; }
+#login .login_content .service_explain .carousel-control {height:100%; color: #77C5F0; font-size: 70px; text-shadow: 0 1px 2px rgba(0, 0, 0, 0); background: none; background-color: transparent; border: 0; opacity: 1; }
 #login .login_content .service_explain .carousel-control:hover,
 #login .login_content .service_explain .carousel-control:focus { color: #77C5F0; opacity: 1; }
 #login .login_content .service_explain .carousel-indicators { display: none; }
