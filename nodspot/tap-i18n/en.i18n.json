@@ -1,0 +1,174 @@
+{
+  "appName": "SPOT27",
+  "error": {
+    "account": {
+      "cannot_self_invite": "Can not invite yourself.",
+      "failed_authentication": "Failed to authenticate user information.",
+      "failed_authorization": "Failed to authorize user information.",
+      "failed_delete_reserved_id": "Failed to delete temporary ID ."
+    },
+    "chat": {
+      "already_entered_chat_room": "Entry to chat room.",
+      "another_entered_chat_room": "A chat room entries from other devices.",
+      "failed_create_chat_room": "Failed to create chat rooms.",
+      "failed_delete_chat_room": "Failed to delete the chat room.",
+      "failed_delete_missed_chat_room": "Failed to delete the chat room not involved.",
+      "failed_update_chat_room": "Failed to update a room.",
+      "not_chat_room_member": "Not a chat room participant.",
+      "not_entered_chat_room": "Did not enter a chat room.",
+      "not_exist_new_members": "No new participants.",
+      "not_found_chat_room": "Failed to find chat room.",
+      "not_allowed_chat_with_not_friend": "You can chat only with your friends."
+    },
+    "common": {
+      "expired_code": "Expired code.",
+      "expired_key": "Expired keys.",
+      "expired_token": "Expired token.",
+      "failed_make_shorten_url": "Failed to create a shorter path (URL).",
+      "failed_send_report": "Could not report data.",
+      "internal": "Internal Server Error.",
+      "invalid_parameters": "Invalid parameter.",
+      "invalid_token": "Invalid token.",
+      "not_supported_method": "Unsupported method.",
+      "unknown": "Unknown error."
+    },
+    "file": {
+      "not_found_file": "Could not find file."
+    },
+    "mail": {
+      "exist_email_address": "Mail address exist already.",
+      "failed_send_mail": "Failed to send mail.",
+      "invalid_email_address": "Mail address is not valid.",
+      "not_exist_email_address": "Mail address does not exist.",
+      "not_found_email_address": "Did not find e-mail address.",
+      "failed_confirm_email_address": "An error occurred during confirming email address.",
+      "succeed_confirm_email_address": "The confirming email address was successful."
+    },
+    "message": {
+      "failed_create_chat_message": "Failed to deliver message.",
+      "failed_recall_chat_message": "Failed to recover chat messages.",
+      "failed_update_chat_message": "Failed to update chat message.",
+      "not_found_chat_message": "Failed to find chat message."
+    },
+    "phone": {
+      "exist_phone_number": "Did not find the phone number.",
+      "failed_send_sms": "Failed to send text messages.",
+      "invalid_phone_number": "Phone number is invalid.",
+      "not_exist_phone_number": "Phone number does not exist.",
+      "not_found_phone_number": "Did not find the phone number."
+    },
+    "principal": {
+      "failed_create_principal": "Failed to create the PRINCIPAL.",
+      "failed_delete_principal": "Failed to delete the PRINCIPAL.",
+      "failed_update_principal": "Failed to update the PRINCIPAL.",
+      "failed_retrieve_principal": "Failed to retrieve the PRINCIPAL.",
+      "exist_principal": "PRINCIPAL already exist."
+    },
+    "relationship": {
+      "cannot_self_friendship": "Can not create yourself as a friend.",
+      "already_friend": "Already Registered as a friend."
+    },
+    "user": {
+      "exist_user_id": "ID already exists.",
+      "exist_user_name": "Username already exists.",
+      "failed_change_user_password": "Failed to change password.",
+      "failed_create_user": "Failed to register user.",
+      "failed_delete_user": "Failed to delete user.",
+      "failed_update_user_profile": "Failed to update profile.",
+      "not_exist_user_id": "Username does not exist.",
+      "not_exist_user_name": "Name does not exist.",
+      "not_found_current_user": "Failed to find user information.",
+      "not_found_target_user": "Failed to find user information.",
+      "not_allowed_view_profile_not_friend": "You can only view profiles of friends."
+    }
+  },
+  "service": {
+    "account": {
+      "url_for_change_password": "URL for change password."
+    },
+    "chat": {},
+    "common": {
+      "app": {
+        "download_loation_description": "▣ You can download the app from the indicated below sites."
+      }
+    },
+    "messages": {},
+    "push": {
+      "default": {
+        "title": "SPOT27"
+      },
+      "system": {
+        "title": "[System Tasks]",
+        "message": "There are system-related tasks."
+      },
+      "account": {
+        "other_login": {
+          "title": "Another Login",
+          "message": "You are logged in from another device and you are automatically logged out."
+        }
+      },
+      "chat": {
+        "invited": {
+          "title": "Invited to Chat",
+          "message": "__sender__ has invited you to a new chat."
+        }
+      },
+      "message": {
+        "capture": {
+          "title": "Capture Detected",
+          "message": "Screen capture has been detected from [__sender__]."
+        },
+        "received": {
+          "title": "New Message",
+          "message": "__sender__'s left a new conversation."
+        }
+      },
+      "relationship": {
+        "accepted": {
+          "title": "Accept Friend",
+          "message": "__sender__ has accepted your friend request."
+        },
+        "requested": {
+          "title": "Friend request : __title__",
+          "message": "__sender__ wants to be your friend."
+        }
+      }
+    },
+    "relationship": {},
+    "user": {}
+  },
+  "method": {
+    "authentication": "Authentication",
+    "version": "Version"
+  },
+  "web": {
+    "button": {
+      "cancel": "Cancel",
+      "click": "Click",
+      "confirm": "Confirm",
+      "no": "No",
+      "ok": "OK",
+      "save": "Save",
+      "send": "Send",
+      "submit": "Submit",
+      "yes": "Yes"
+    },
+    "security": {
+      "title_change_password": "Change Password",
+      "error_change_password": "An error occurred during changing password.",
+      "success_change_password": "The password change was successful.",
+      "change_your_password": "Change your password.",
+      "enter_your_password": "Enter password.",
+      "not_matched_password": "Entered passwords not matched.",
+      "password": "Password",
+      "password_confirm": "Password (confirm)",
+      "password_strength": "Password Strength",
+      "password_strength_level_zero": "None",
+      "password_strength_level_very_weak": "Very Weak",
+      "password_strength_level_weak": "Weak",
+      "password_strength_level_reasonable": "Reasonable",
+      "password_strength_level_strong": "Strong",
+      "password_strength_level_very_strong": "Very Strong"
+    }
+  }
+}
