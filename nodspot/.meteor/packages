@@ -84,3 +84,4 @@ shell-server@0.2.1
 momentjs:moment
 meteorhacks:ssr
 meteorhacks:aggregate
+matb33:collection-hooks

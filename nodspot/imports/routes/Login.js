@@ -78,7 +78,8 @@ export default class Login extends React.Component {
 
     Meteor.call('spotLogin',{userLang:'ko', username:Id, password:sha256Password}, function(error, result){
       if(!error && result.status){
-        browserHistory.push('/ltr/mailbox/inbox');
+        //browserHistory.push('/ltr/mailbox/inbox');
+        window.location.href='/ltr/mailbox/inbox';
       }
       else{
         this.basicModal.open('아이디 또는 비밀번호가 다릅니다.');
