@@ -388,7 +388,8 @@ export default class Signup extends React.Component {
     }, function(error, result) {
       if (Meteor.user()) {
         EncryptionUtils.onSignIn(password);
-        browserHistory.push('/ltr/mailbox/inbox');
+        //browserHistory.push('/ltr/mailbox/inbox');
+        window.location.href='/ltr/mailbox/inbox';
       }
     });
   }
